@@ -4,7 +4,7 @@ An exploratory data analysis (EDA) project on the **Netflix dataset**, uncoverin
 The goal of this project is to visualize and understand content distribution patterns and trends within Netflix’s catalog.
 
 ---
-
+        
 ## 📌 Features
 
 * Dataset cleaning and preprocessing
@@ -87,4 +87,4 @@ If you find this project interesting, feel free to ⭐ the repo and share your t
 - 💻 [GitHub – Shubham1919284](https://github.com/Shubham1919284)  
 
 ---
-
+---
