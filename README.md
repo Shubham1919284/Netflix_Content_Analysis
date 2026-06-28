@@ -1,37 +1,44 @@
-# 📺 Netflix Data Analysis
+# 🎬 Netflix Movie Dataset — Exploratory Data Analysis
 
-An exploratory data analysis (EDA) project on the **Netflix dataset**, uncovering insights about movies, TV shows, genres, release trends, ratings, and more.
-The goal of this project is to visualize and understand content distribution patterns and trends within Netflix’s catalog.
+An exploratory data analysis (EDA) project on a movie metadata dataset, uncovering patterns in genre distribution, audience reception, and release trends across more than a century of films.
 
 ---
-        
-## 📌 Features
 
-* Dataset cleaning and preprocessing
-* Exploratory data analysis using Python
-* Visualizations of:
+## 📌 What This Project Covers
 
-  * Content distribution by **type** (Movies vs. TV Shows)
-  * Release year trends
-  * Popular genres and countries
-  * Ratings and audience categories
-* Insights on how Netflix’s library has evolved over time
+- Data cleaning and preprocessing (date formatting, dropping unused columns, handling multi-valued genre fields)
+- Categorizing films by audience reception (`popular`, `average`, `below-average`, `not-popular`) based on vote averages
+- Splitting and exploding multi-genre entries to analyze genre-level frequency accurately
+- Visualizing:
+  - Genre distribution across the dataset
+  - Vote-average category distribution
+  - Release-year trends from 1902 to 2024
+- Identifying the most and least popular titles by popularity score
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Python**
-* **Jupyter Notebook**
-* **Pandas, NumPy** (data analysis)
-* **Matplotlib, Seaborn** (data visualization)
+- **Python**
+- **Jupyter Notebook**
+- **Pandas, NumPy** — data cleaning & transformation
+- **Matplotlib, Seaborn** — visualization
 
 ---
 
 ## 📂 Dataset
 
-The dataset used in this analysis can be found here:
-[Netflix Dataset on Kaggle](https://www.kaggle.com/shivamb/netflix-shows)
+A movie metadata dataset containing release date, title, popularity score, vote count, vote average, original language, and genre for each entry.
+
+**Size:** 9,837 records · **Unique genres:** 19 (after splitting multi-genre fields) · **Release range:** 1902–2024
+
+---
+
+## 📊 Verified Findings
+
+- **Top genres by frequency:** Drama, Comedy, and Action lead the dataset, with Drama appearing most often across titles
+- **Vote-average categorization:** Films were bucketed into four reception tiers (not-popular → popular) using quartile-based cuts on the vote average column, giving a clearer picture of how reception is distributed across the catalog
+- **Release trend:** The dataset spans over a century of releases (1902–2024), with a release-year histogram used to visualize how volume has shifted over time
 
 ---
 
@@ -40,19 +47,17 @@ The dataset used in this analysis can be found here:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/netflix-analysis.git
-cd netflix-analysis
+git clone https://github.com/Shubham1919284/Netflix_Content_Analysis.git
+cd Netflix_Content_Analysis
 ```
 
 ### 2. Install dependencies
 
-Make sure you have Python 3.x installed, then install required libraries:
-
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy matplotlib seaborn jupyter
 ```
 
-### 3. Run the Notebook
+### 3. Run the notebook
 
 ```bash
 jupyter notebook Netflix_Analysis.ipynb
@@ -60,31 +65,17 @@ jupyter notebook Netflix_Analysis.ipynb
 
 ---
 
-## 📊 Sample Insights
+## 🔮 Future Enhancements
 
-* Majority of Netflix’s catalog consists of **Movies**.
-* Rapid growth in content addition after **2015**.
-* The **United States and India** dominate in number of titles produced.
-* **TV-MA** is the most common rating, indicating adult-oriented content.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you’d like to improve the notebook, add new visualizations, or extend the analysis, feel free to fork this repo and create a pull request.
+- Add a true Netflix-catalog dataset (with content type, country, and maturity rating fields) for platform-specific insights
+- Add genre-vs-popularity correlation analysis
+- Build an interactive dashboard (Streamlit or Power BI) on top of the existing findings
 
 ---
 
-## 📜 License
+## 🙌 Let's Connect
 
-This project is licensed under the **MIT License**.
----
-## 🙌 Let’s Connect  
+If you find this project interesting, feel free to ⭐ the repo and share your thoughts!
 
-If you find this project interesting, feel free to ⭐ the repo and share your thoughts!  
-
-- 🔗 [LinkedIn – Shubham Kumar Jha](https://www.linkedin.com/in/shubham-kumar-jha-1a2b3c)  
-- 💻 [GitHub – Shubham1919284](https://github.com/Shubham1919284)  
-
----
----
+- 🔗 [LinkedIn – Shubham Kumar Jha](https://www.linkedin.com/in/shubham-kumar-jha-1a2b3c)
+- 💻 [GitHub – Shubham1919284](https://github.com/Shubham1919284)
